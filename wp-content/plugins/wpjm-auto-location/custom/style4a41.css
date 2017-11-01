@@ -1,0 +1,60 @@
+/**
+ * WPJM Auto Location Styles
+ *
+ * This file will be loaded after all other theme stylesheets.
+ */
+.pac-container {
+	box-shadow: none !important;
+	overflow: visible !important;
+}
+
+.pac-item {
+	box-shadow: none !important;
+	font-size: 1em !important;
+	cursor: pointer !important;
+	width: 100.2% !important;
+	height: auto !important;
+	white-space: nowrap !important;
+	overflow: hidden !important;
+	margin: 0 !important;
+	display: block !important;
+	width: 100% !important
+}
+
+.pac-item:hover {
+	background: rgba(0,0,0,0.05) !important;
+}
+
+.pac-item span {
+	font-size: 0.8em !important;
+}
+
+.pac-item span.pac-matched {
+	font-size: 1em !important;
+}
+
+.pac-item .pac-icon-marker {
+	display: none !important;
+}
+
+.pac-item:first-of-type {
+	border-bottom: none !important;
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+
+.pac-item:last-of-type {
+	border-top: none !important;
+	border-top-left-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+}
+
+.pac-item:not(:last-of-type):not(:first-of-type) {
+	border-top: none !important;
+	border-bottom: none !important;
+	border-radius: 0 !important;
+}
+
+.pac-container:after {
+	display: none !important;
+}
