@@ -20,7 +20,7 @@
 								<fieldset class="fieldset-create_account_email">
 									<label for="create_account_email">Your email</label>
 									<div class="field required-field">
-										<input class="jmfe-text-field jmfe-input-text input-text text-create_account_email" id="create_account_email" name="create_account_email" placeholder="you@yourdomain.com" required="" title="" type="text" value="">
+										<input class="jmfe-text-field jmfe-input-text input-text text-create_account_email" id="create_account_email" name="up_email" placeholder="you@yourdomain.com" required="" title="" type="text" value="">
 									</div>
 								</fieldset>
 								<fieldset class="fieldset-ads_info">
@@ -35,13 +35,16 @@
 								<fieldset class="fieldset-job_title">
 									<label for="job_title">Job Title</label>
 									<div class="field required-field">
-										<input class="jmfe-text-field jmfe-input-text input-text text-job_title" id="job_title" name="job_title" placeholder="e.g &quot;Western family is looking for Helper&quot;" required="" title="" type="text" value="">
+										<input class="jmfe-text-field jmfe-input-text input-text text-job_title" id="job_title" name="j_jobtitle" placeholder="e.g &quot;Western family is looking for Helper&quot;" required="" title="" type="text" value="">
 									</div>
 								</fieldset>
 								<fieldset class="fieldset-job_region">
 									<label for="job_region">Job Region</label>
 									<div class="field required-field">
-										<select class='postform' id='job_region' name='job_region' required="">
+										<select class='postform' id='job_region' name='j_country' required="">
+											<option selected disabled>
+												Select Country
+											</option>
 											<option class="level-0" value="35">
 												Hong Kong
 											</option>
@@ -69,15 +72,16 @@
 								<fieldset class="fieldset-job_location">
 									<label for="job_location">District Location <small>(optional)</small></label>
 									<div class="field">
-										<input class="jmfe-text-field jmfe-input-text input-text text-job_location" id="job_location" name="job_location" placeholder="e.g. &quot;Wan Chai&quot;" title="" type="text" value=""> <small class="description text-job_location-description">As your location is important for the candidates, we recommend you to fill your district location.</small>
+										<input class="jmfe-text-field jmfe-input-text input-text text-job_location" id="job_location" name="j_districtlocation" placeholder="e.g. &quot;Wan Chai&quot;" title="" type="text" value=""> <small class="description text-job_location-description">As your location is important for the candidates, we recommend you to fill your district location.</small>
 									</div>
 								</fieldset>
 								<fieldset class="fieldset-job_type">
 									<label for="job_type">Job type</label>
 									<div class="field required-field">
-										<select class='postform' id='job_type' name='job_type' required="">
-											<option value=''>
-												Choose job type&hellip;
+										<select class='postform' id='job_type' name='j_type' required="">
+											
+											<option selected disabled>
+												Select job type
 											</option>
 											<option class="level-0" selected="selected" value="2">
 												Full Time
@@ -94,7 +98,10 @@
 								<fieldset class="fieldset-job_category">
 									<label for="job_category">Job category <small>(optional)</small></label>
 									<div class="field">
-										<select class='postform' id='job_category' name='job_category'>
+										<select class='postform' id='job_category' name='j_category'>
+											<option selected disabled>
+												Select job category
+											</option>
 											<option class="level-0" value="36">
 												Domestic Helper
 											</option>
@@ -122,7 +129,10 @@
 								<fieldset class="fieldset-job_tags">
 									<label for="job_tags">Job tags <small>(optional)</small></label>
 									<div class="field">
-										<select class='' data-multiple_text='Select Some Options' data-no_results_text='No results match' data-placeholder='e.g. Baby Care, Child Care, Cooking, Housekeeping, Driving...' id='job_tags' multiple='multiple' name='job_tags[]'>
+										<select class='' data-multiple_text='Select Some Options' data-no_results_text='No results match' data-placeholder='e.g. Baby Care, Child Care, Cooking, Housekeeping, Driving...' id='job_tags' multiple='multiple' name='j_tags'>
+											<option selected disabled>
+												e.g. "Baby care, child care, cooking, housekeeping, driving......."
+											</option>
 											<option class="level-0" value="146">
 												Baby care
 											</option>
@@ -160,7 +170,7 @@
 											<link href='wp-includes/css/dashicons.min4a41.css?ver=4.8.2' id='dashicons-css' media='all' rel='stylesheet' type='text/css'>
 											<link href='wp-includes/css/editor.min4a41.css?ver=4.8.2' id='editor-buttons-css' media='all' rel='stylesheet' type='text/css'>
 											<div class="wp-editor-container" id="wp-job_description-editor-container">
-												<textarea class="wp-editor-area" cols="40" id="job_description" name="job_description" rows="8"></textarea>
+												<textarea class="wp-editor-area" cols="40" id="job_description" name="j_description" rows="8"></textarea>
 											</div>
 										</div><small class="description">Please give some information about the job position and about your family.</small>
 									</div>
@@ -168,9 +178,10 @@
 								<fieldset class="fieldset-working_statuts">
 									<label for="working_statuts">Preferred Working Status</label>
 									<div class="field required-field">
-										<select class='postform' id='working_statuts' name='working_statuts' required="">
-											<option class="level-0" value="97">
-												Any Situation
+										<select class='postform' id='working_statuts' name='j_workingstatus' required="">
+											
+											<option selected disabled>
+												Select status
 											</option>
 											<option class="level-0" value="96">
 												Break Contract
@@ -197,21 +208,24 @@
 									<label for="helper_requirements">Main Duties <small>(optional)</small></label>
 									<div class="field">
 										<ul class="job-manager-term-checklist job-manager-term-checklist-helper_requirements">
-											<li class="popular-category" id='helper_requirement-57'><label class="selectit"><input id="in-helper_requirement-57" name="tax_input[helper_requirement][]" type="checkbox" value="57"> Baby Care</label></li>
-											<li class="popular-category" id='helper_requirement-56'><label class="selectit"><input id="in-helper_requirement-56" name="tax_input[helper_requirement][]" type="checkbox" value="56"> Child Care</label></li>
-											<li class="popular-category" id='helper_requirement-54'><label class="selectit"><input id="in-helper_requirement-54" name="tax_input[helper_requirement][]" type="checkbox" value="54"> Elder Care</label></li>
-											<li class="popular-category" id='helper_requirement-180'><label class="selectit"><input id="in-helper_requirement-180" name="tax_input[helper_requirement][]" type="checkbox" value="180"> Groceries</label></li>
-											<li class="popular-category" id='helper_requirement-79'><label class="selectit"><input id="in-helper_requirement-79" name="tax_input[helper_requirement][]" type="checkbox" value="79"> Housekeeping</label></li>
-											<li class="popular-category" id='helper_requirement-53'><label class="selectit"><input id="in-helper_requirement-53" name="tax_input[helper_requirement][]" type="checkbox" value="53"> Pet Care</label></li>
-											<li class="popular-category" id='helper_requirement-91'><label class="selectit"><input id="in-helper_requirement-91" name="tax_input[helper_requirement][]" type="checkbox" value="91"> Professional Driver</label></li>
-											<li class="popular-category" id='helper_requirement-55'><label class="selectit"><input id="in-helper_requirement-55" name="tax_input[helper_requirement][]" type="checkbox" value="55"> Teen Care</label></li>
+											<li class="popular-category" id='helper_requirement-57'><label class="selectit"><input id="in-helper_requirement-57" name='j_mainduties[]' type="checkbox" value="57"> Baby Care</label></li>
+											<li class="popular-category" id='helper_requirement-56'><label class="selectit"><input id="in-helper_requirement-56" name='j_mainduties[]' type="checkbox" value="56"> Child Care</label></li>
+											<li class="popular-category" id='helper_requirement-54'><label class="selectit"><input id="in-helper_requirement-54" name='j_mainduties[]' type="checkbox" value="54"> Elder Care</label></li>
+											<li class="popular-category" id='helper_requirement-180'><label class="selectit"><input id="in-helper_requirement-180" name='j_mainduties[]' type="checkbox" value="180"> Groceries</label></li>
+											<li class="popular-category" id='helper_requirement-79'><label class="selectit"><input id="in-helper_requirement-79" name='j_mainduties[]' type="checkbox" value="79"> Housekeeping</label></li>
+											<li class="popular-category" id='helper_requirement-53'><label class="selectit"><input id="in-helper_requirement-53" name='j_mainduties[]' type="checkbox" value="53"> Pet Care</label></li>
+											<li class="popular-category" id='helper_requirement-91'><label class="selectit"><input id="in-helper_requirement-91" name='j_mainduties[]' type="checkbox" value="91"> Professional Driver</label></li>
+											<li class="popular-category" id='helper_requirement-55'><label class="selectit"><input id="in-helper_requirement-55" name='j_mainduties[]' type="checkbox" value="55"> Teen Care</label></li>
 										</ul>
 									</div>
 								</fieldset>
 								<fieldset class="fieldset-cooking_requirements">
 									<label for="cooking_requirements">Cooking Skills <small>(optional)</small></label>
 									<div class="field">
-										<select class='job-manager-category-dropdown' data-multiple_text='Select Some Options' data-no_results_text='No results match' data-placeholder='Choose a category&hellip;' id='cooking_requirements' multiple='multiple' name='cooking_requirements[]'>
+										<select class='job-manager-category-dropdown' data-multiple_text='Select Some Options' data-no_results_text='No results match' data-placeholder='Choose a category&hellip;' id='cooking_requirements' multiple='multiple' name='j_cookingskills'>
+											<option selected disabled>
+												Select Language
+											</option>
 											<option class="level-0" value="59">
 												Arabic
 											</option>
@@ -237,16 +251,16 @@
 									<label for="other_skills">Other Required Skills <small>(optional)</small></label>
 									<div class="field">
 										<ul class="job-manager-term-checklist job-manager-term-checklist-other_skills">
-											<li class="popular-category" id='other_skill-199'><label class="selectit"><input id="in-other_skill-199" name="tax_input[other_skill][]" type="checkbox" value="199"> Baking</label></li>
-											<li class="popular-category" id='other_skill-84'><label class="selectit"><input id="in-other_skill-84" name="tax_input[other_skill][]" type="checkbox" value="84"> Car Wash</label></li>
-											<li class="popular-category" id='other_skill-245'><label class="selectit"><input id="in-other_skill-245" name="tax_input[other_skill][]" type="checkbox" value="245"> Driving Licence</label></li>
-											<li class="popular-category" id='other_skill-189'><label class="selectit"><input id="in-other_skill-189" name="tax_input[other_skill][]" type="checkbox" value="189"> First Aid Certificate</label></li>
-											<li class="popular-category" id='other_skill-85'><label class="selectit"><input id="in-other_skill-85" name="tax_input[other_skill][]" type="checkbox" value="85"> Gardening</label></li>
-											<li id='other_skill-89'><label class="selectit"><input id="in-other_skill-89" name="tax_input[other_skill][]" type="checkbox" value="89"> Handyman</label></li>
-											<li class="popular-category" id='other_skill-86'><label class="selectit"><input id="in-other_skill-86" name="tax_input[other_skill][]" type="checkbox" value="86"> Housework</label></li>
-											<li class="popular-category" id='other_skill-87'><label class="selectit"><input id="in-other_skill-87" name="tax_input[other_skill][]" type="checkbox" value="87"> Sewing</label></li>
-											<li class="popular-category" id='other_skill-200'><label class="selectit"><input id="in-other_skill-200" name="tax_input[other_skill][]" type="checkbox" value="200"> Swimming</label></li>
-											<li class="popular-category" id='other_skill-201'><label class="selectit"><input id="in-other_skill-201" name="tax_input[other_skill][]" type="checkbox" value="201"> Tutoring</label></li>
+											<li class="popular-category" id='other_skill-199'><label class="selectit"><input id="in-other_skill-199" 	name='j_otherskills[]' type="checkbox" value="199"> Baking</label></li>
+											<li class="popular-category" id='other_skill-84'><label class="selectit"><input id="in-other_skill-84" 		name='j_otherskills[]' type="checkbox" value="84"> Car Wash</label></li>
+											<li class="popular-category" id='other_skill-245'><label class="selectit"><input id="in-other_skill-245" 	name='j_otherskills[]' type="checkbox" value="245"> Driving Licence</label></li>
+											<li class="popular-category" id='other_skill-189'><label class="selectit"><input id="in-other_skill-189" 	name='j_otherskills[]' type="checkbox" value="189"> First Aid Certificate</label></li>
+											<li class="popular-category" id='other_skill-85'><label class="selectit"><input id="in-other_skill-85" 		name='j_otherskills[]' type="checkbox" value="85"> Gardening</label></li>
+											<li id='other_skill-89'><label class="selectit"><input id="in-other_skill-89" 								name='j_otherskills[]' type="checkbox" value="89"> Handyman</label></li>
+											<li class="popular-category" id='other_skill-86'><label class="selectit"><input id="in-other_skill-86" 		name='j_otherskills[]' type="checkbox" value="86"> Housework</label></li>
+											<li class="popular-category" id='other_skill-87'><label class="selectit"><input id="in-other_skill-87" 		name='j_otherskills[]' type="checkbox" value="87"> Sewing</label></li>
+											<li class="popular-category" id='other_skill-200'><label class="selectit"><input id="in-other_skill-200" 	name='j_otherskills[]' type="checkbox" value="200"> Swimming</label></li>
+											<li class="popular-category" id='other_skill-201'><label class="selectit"><input id="in-other_skill-201" 	name='j_otherskills[]' type="checkbox" value="201"> Tutoring</label></li>
 										</ul>
 									</div>
 								</fieldset>
@@ -254,28 +268,31 @@
 									<label for="candidate_languages2">Required Languages</label>
 									<div class="field required-field">
 										<ul class="job-manager-term-checklist job-manager-term-checklist-candidate_languages2">
-											<li class="popular-category" id='candidate_language2-149'><label class="selectit"><input id="in-candidate_language2-149" name="tax_input[candidate_language2][]" type="checkbox" value="149"> Cantonese</label></li>
-											<li class="popular-category" id='candidate_language2-148'><label class="selectit"><input id="in-candidate_language2-148" name="tax_input[candidate_language2][]" type="checkbox" value="148"> English</label></li>
-											<li class="popular-category" id='candidate_language2-152'><label class="selectit"><input id="in-candidate_language2-152" name="tax_input[candidate_language2][]" type="checkbox" value="152"> Filipino</label></li>
-											<li class="popular-category" id='candidate_language2-153'><label class="selectit"><input id="in-candidate_language2-153" name="tax_input[candidate_language2][]" type="checkbox" value="153"> Indonesian</label></li>
-											<li id='candidate_language2-154'><label class="selectit"><input id="in-candidate_language2-154" name="tax_input[candidate_language2][]" type="checkbox" value="154"> Japanese</label></li>
-											<li class="popular-category" id='candidate_language2-150'><label class="selectit"><input id="in-candidate_language2-150" name="tax_input[candidate_language2][]" type="checkbox" value="150"> Mandarin</label></li>
-											<li id='candidate_language2-168'><label class="selectit"><input id="in-candidate_language2-168" name="tax_input[candidate_language2][]" type="checkbox" value="168"> Modern Arabic</label></li>
-											<li id='candidate_language2-151'><label class="selectit"><input id="in-candidate_language2-151" name="tax_input[candidate_language2][]" type="checkbox" value="151"> Thai</label></li>
+											<li class="popular-category" id='candidate_language2-149'><label class="selectit"><input id="in-candidate_language2-149" name='j_requiredlanguages[]' type="checkbox" value="149"> Cantonese</label></li>
+											<li class="popular-category" id='candidate_language2-148'><label class="selectit"><input id="in-candidate_language2-148" name='j_requiredlanguages[]' type="checkbox" value="148"> English</label></li>
+											<li class="popular-category" id='candidate_language2-152'><label class="selectit"><input id="in-candidate_language2-152" name='j_requiredlanguages[]' type="checkbox" value="152"> Filipino</label></li>
+											<li class="popular-category" id='candidate_language2-153'><label class="selectit"><input id="in-candidate_language2-153" name='j_requiredlanguages[]' type="checkbox" value="153"> Indonesian</label></li>
+											<li id='candidate_language2-154'><label class="selectit"><input id="in-candidate_language2-154" 						 name='j_requiredlanguages[]' type="checkbox" value="154"> Japanese</label></li>
+											<li class="popular-category" id='candidate_language2-150'><label class="selectit"><input id="in-candidate_language2-150" name='j_requiredlanguages[]' type="checkbox" value="150"> Mandarin</label></li>
+											<li id='candidate_language2-168'><label class="selectit"><input id="in-candidate_language2-168" 						 name='j_requiredlanguages[]' type="checkbox" value="168"> Modern Arabic</label></li>
+											<li id='candidate_language2-151'><label class="selectit"><input id="in-candidate_language2-151"							 name='j_requiredlanguages[]' type="checkbox" value="151"> Thai</label></li>
 										</ul>
 									</div>
 								</fieldset>
 								<fieldset class="fieldset-application">
 									<label for="application">Application Email</label>
 									<div class="field required-field">
-										<input class="jmfe-text-field jmfe-input-text input-text text-application" id="application" name="application" placeholder="Enter your email address" required="" title="" type="text" value="">
+										<input class="jmfe-text-field jmfe-input-text input-text text-application" id="application" name="j_applicationemail" placeholder="Enter your email address" required="" title="" type="text" value="">
 									</div>
 								</fieldset>
 								<h2>Family Details</h2>
 								<fieldset class="fieldset-company_name">
 									<label for="company_name">You are</label>
 									<div class="field required-field">
-										<select class="jmfe-select-field jmfe-input-select input-select select-company_name" id="company_name" name="company_name">
+										<select class="jmfe-select-field jmfe-input-select input-select select-company_name" id="company_name" name="j_employertype">
+											<option selected disabled>
+												Select category
+											</option>
 											<option value="Direct Employer">
 												Direct Employer
 											</option>
@@ -291,8 +308,10 @@
 								<fieldset class="fieldset-employer_nationalities">
 									<label for="employer_nationalities">Nationality</label>
 									<div class="field required-field">
-										<select class='postform' id='employer_nationalities' name='employer_nationalities' required="">
-											<option class="level-0" value="181">
+										<select class='postform' id='employer_nationalities' name='j_nationality' required="">
+											<option selected disabled>
+												Select family type
+											</option><option class="level-0" value="181">
 												American Family
 											</option>
 											<option class="level-0" value="187">
@@ -370,7 +389,10 @@
 								<fieldset class="fieldset-family_types">
 									<label for="family_types">Family Type</label>
 									<div class="field required-field">
-										<select class='postform' id='family_types' name='family_types' required="">
+										<select class='postform' id='family_types' name='j_familytype' required="">
+											<option selected disabled>
+												Select family type
+											</option>
 											<option class="level-0" value="68">
 												Couple
 											</option>
@@ -419,13 +441,13 @@
 								<fieldset class="fieldset-start_date">
 									<label for="start_date">Start Date</label>
 									<div class="field required-field">
-										<input class="jmfe-date-field jmfe-input-date input-date input-text jmfe-date-picker date-picker-start_date" id="start_date" maxlength="" name="start_date" placeholder="" type="text" value=""> <span class="description date-picker-start_date-description"><small class="description">Deadline for applicants to start to work for your family.</small></span>
+										<input class="jmfe-date-field jmfe-input-date input-date input-text jmfe-date-picker date-picker-start_date" id="start_date" maxlength="" name="j_startdate" placeholder="" type="text" value=""> <span class="description date-picker-start_date-description"><small class="description">Deadline for applicants to start to work for your family.</small></span>
 									</div><span class="description date-picker-start_date-description"></span>
 								</fieldset>
 								<fieldset class="fieldset-salary_range">
 									<span class="description date-picker-start_date-description"><label for="salary_range">Monthly Salary <small>(optional)</small></label></span>
 									<div class="field">
-										<span class="description date-picker-start_date-description"><input class="jmfe-text-field jmfe-input-text input-text text-salary_range" id="salary_range" name="salary_range" placeholder="e.g. &quot;HK$5,000&quot;, &quot;Based on experience&quot;..." title="" type="text" value=""></span>
+										<span class="description date-picker-start_date-description"><input class="jmfe-text-field jmfe-input-text input-text text-salary_range" id="salary_range" name="j_monthlysalary" placeholder="e.g. &quot;HK$5,000&quot;, &quot;Based on experience&quot;..." title="" type="text" value=""></span>
 									</div><span class="description date-picker-start_date-description"></span>
 								</fieldset>
 								<fieldset class="fieldset-company_logo">
@@ -434,7 +456,7 @@
 										<span class="description date-picker-start_date-description"><label class="file-field-label" for="company_logo"></label></span>
 										<div class="job-manager-uploaded-files">
 											<span class="description date-picker-start_date-description"><label class="file-field-label" for="company_logo"></label></span>
-										</div><span class="description date-picker-start_date-description"><label class="file-field-label" for="company_logo"><input class="input-text file-company_logo wp-job-manager-file-upload ajax-file-company_logo" data-file_types="jpg|jpeg|gif|png" id="company_logo" name="company_logo" placeholder="" type="file"> <span class="button button--size-medium">Choose Image</span></label> <small class="description file-field-description">A nice logo will be automatically added by your support team - Not required to upload your own logo.</small></span>
+										</div><span class="description date-picker-start_date-description"><label class="file-field-label" for="company_logo"><input class="input-text file-company_logo wp-job-manager-file-upload ajax-file-company_logo" data-file_types="jpg|jpeg|png" id="company_logo" name="j_specificlogo" placeholder="" type="file"> <span class="button button--size-medium">Choose Image</span></label> <small class="description file-field-description">A nice logo will be automatically added by your support team - Not required to upload your own logo.</small></span>
 									</div>
 									<div class="field v_customfield">
 										<div class="" style="width:20% !important;">
