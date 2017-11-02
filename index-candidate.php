@@ -29,9 +29,4 @@
 			break;
 	}
  ?>
-
-
-
-
-
 <?php include "includes-candidate/footer.php" ?>

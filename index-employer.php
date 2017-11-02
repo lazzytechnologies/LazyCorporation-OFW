@@ -32,9 +32,4 @@
 			break;
 	}
  ?>
-
-
-
-
-
 <?php include "includes-employer/footer.php" ?>

@@ -41,9 +41,4 @@
 			break;
 	}
  ?>
-
-
-
-
-
 <?php include "includes/footer.php" ?>
