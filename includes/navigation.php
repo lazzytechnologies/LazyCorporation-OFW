@@ -51,10 +51,10 @@
 								</ul>
 							</li>
 							<li class="popup menu-item menu-item-type-post_type menu-item-object-page menu-item-99991563" id="menu-item-99991563">
-								<a class="popup-trigger-ajax" href="includes/register.php">Register</a>
+								<a href="index.php?source=register">Register</a>
 							</li>
 							<li class="highlight popup menu-item menu-item-type-post_type menu-item-object-page menu-item-99991213" id="menu-item-99991213">
-								<a class="popup-trigger-ajax" href="includes/login.php">Login</a>
+								<a href="index.php?source=login">Login</a>
 							</li>
 						</ul>
 					</div>
