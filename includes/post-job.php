@@ -1,8 +1,10 @@
+
 <br><br><br><br><br>
 	<div class="site-main" id="main">
 		<header class="page-header">
 			<h1 class="page-title">Post A Job</h1>
 		</header>
+		<?php echo post_job(); ?>
 		<div class="content-area container" id="primary" role="main">
 			<div class="row">
 				<div class="col-sm-12 col-md-10 col-md-offset-1">
@@ -10,7 +12,7 @@
 						<div class="entry-content">
 							<p><img alt="Submit profile helper" class="wp-image-99992040 aligncenter" data-attachment-id="99992040" data-comments-opened="1" data-image-description="" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="positive-feedback" data-large-file="https://i0.wp.com/www.helperplace.com/wp-content/uploads/2016/06/Positive-feedback.png?fit=232%2C236&amp;ssl=1" data-medium-file="https://i0.wp.com/www.helperplace.com/wp-content/uploads/2016/06/Positive-feedback.png?fit=232%2C236&amp;ssl=1" data-orig-file="https://i0.wp.com/www.helperplace.com/wp-content/uploads/2016/06/Positive-feedback.png?fit=232%2C236&amp;ssl=1" data-orig-size="232,236" data-permalink="https://www.helperplace.com/submit-your-profile/positive-feedback" data-recalc-dims="1" src="../i0.wp.com/www.helperplace.com/wp-content/uploads/2016/06/Positive-feedback0753.png?resize=109%2C111"></p>
 							<p>Post a job on HelperPlace to reach Domestics Employees looking for a new challenge. Few minutes later, your ad will be online. Start your search and connect with the best profiles in your city.</p>
-							<form action="https://www.helperplace.com/post-a-job" class="job-manager-form" enctype="multipart/form-data" id="submit-job-form" method="post" name="submit-job-form">
+							<form  class=""  method="post">
 								<fieldset>
 									<label>Have an account?</label>
 									<div class="field account-sign-in">
@@ -45,25 +47,25 @@
 											<option selected disabled>
 												Select Country
 											</option>
-											<option class="level-0" value="35">
+											<option class="level-0" value="Hong Kong">
 												Hong Kong
 											</option>
-											<option class="level-0" value="162">
+											<option class="level-0" value="Macau">
 												Macau
 											</option>
-											<option class="level-0" value="160">
+											<option class="level-0" value="Qatar">
 												Qatar
 											</option>
-											<option class="level-0" value="163">
+											<option class="level-0" value="Saudi Arabia">
 												Saudi Arabia
 											</option>
-											<option class="level-0" value="159">
+											<option class="level-0" value="Singapore">
 												Singapore
 											</option>
-											<option class="level-0" value="164">
+											<option class="level-0" value="State of Kuwait">
 												State of Kuwait
 											</option>
-											<option class="level-0" value="161">
+											<option class="level-0" value="United Arab Emirates">
 												United Arab Emirates
 											</option>
 										</select>
@@ -83,13 +85,13 @@
 											<option selected disabled>
 												Select job type
 											</option>
-											<option class="level-0" selected="selected" value="2">
+											<option class="level-0" selected="selected" value="Full Time">
 												Full Time
 											</option>
-											<option class="level-0" value="3">
+											<option class="level-0" value="Part Time">
 												Part Time
 											</option>
-											<option class="level-0" value="4">
+											<option class="level-0" value="Temporary">
 												Temporary
 											</option>
 										</select>
@@ -102,25 +104,25 @@
 											<option selected disabled>
 												Select job category
 											</option>
-											<option class="level-0" value="36">
+											<option class="level-0" value="Domestic Helper">
 												Domestic Helper
 											</option>
-											<option class="level-0" value="37">
+											<option class="level-0" value="Driver">
 												Driver
 											</option>
-											<option class="level-0" value="65">
+											<option class="level-0" value="Other">
 												Other
 											</option>
-											<option class="level-1" value="66">
+											<option class="level-1" value="Babysitter">
 												&nbsp;&nbsp;&nbsp;Babysitter
 											</option>
-											<option class="level-1" value="166">
+											<option class="level-1" value="Gardener">
 												&nbsp;&nbsp;&nbsp;Gardener
 											</option>
-											<option class="level-1" value="167">
+											<option class="level-1" value="Handyman">
 												&nbsp;&nbsp;&nbsp;Handyman
 											</option>
-											<option class="level-1" value="165">
+											<option class="level-1" value="Marternity Specialist">
 												&nbsp;&nbsp;&nbsp;Marternity Specialist
 											</option>
 										</select>
@@ -133,28 +135,28 @@
 											<option selected disabled>
 												e.g. "Baby care, child care, cooking, housekeeping, driving......."
 											</option>
-											<option class="level-0" value="146">
+											<option class="level-0" value="Baby care">
 												Baby care
 											</option>
-											<option class="level-0" value="171">
+											<option class="level-0" value="Child care">
 												Child care
 											</option>
-											<option class="level-0" value="78">
+											<option class="level-0" value="Cooking">
 												Cooking
 											</option>
-											<option class="level-0" value="533">
+											<option class="level-0" value="Driver">
 												Driver
 											</option>
-											<option class="level-0" value="283">
+											<option class="level-0" value="Elderly care">
 												Elderly care
 											</option>
-											<option class="level-0" value="976">
+											<option class="level-0" value="Gardening">
 												Gardening
 											</option>
-											<option class="level-0" value="266">
+											<option class="level-0" value="Housekeeping">
 												Housekeeping
 											</option>
-											<option class="level-0" value="186">
+											<option class="level-0" value="Pet Care">
 												Pet Care
 											</option>
 											<option class="level-0" value="185">
@@ -183,22 +185,22 @@
 											<option selected disabled>
 												Select status
 											</option>
-											<option class="level-0" value="96">
+											<option  value="Break Contract">
 												Break Contract
 											</option>
-											<option class="level-0" value="92">
+											<option  value="Finished Contract">
 												Finished Contract
 											</option>
-											<option class="level-0" value="94">
+											<option  value="Terminated Due to Relocation/Financial">
 												Terminated Due to Relocation/Financial
 											</option>
-											<option class="level-0" value="95">
+											<option  value="Terminated for Other Reasons">
 												Terminated for Other Reasons
 											</option>
-											<option class="level-0" value="240">
+											<option  value="Transfer">
 												Transfer
 											</option>
-											<option class="level-0" value="93">
+											<option  value="Unemployed">
 												Unemployed
 											</option>
 										</select>
@@ -208,14 +210,14 @@
 									<label for="helper_requirements">Main Duties <small>(optional)</small></label>
 									<div class="field">
 										<ul class="job-manager-term-checklist job-manager-term-checklist-helper_requirements">
-											<li class="popular-category" id='helper_requirement-57'><label class="selectit"><input id="in-helper_requirement-57" name='j_mainduties[]' type="checkbox" value="57"> Baby Care</label></li>
-											<li class="popular-category" id='helper_requirement-56'><label class="selectit"><input id="in-helper_requirement-56" name='j_mainduties[]' type="checkbox" value="56"> Child Care</label></li>
-											<li class="popular-category" id='helper_requirement-54'><label class="selectit"><input id="in-helper_requirement-54" name='j_mainduties[]' type="checkbox" value="54"> Elder Care</label></li>
-											<li class="popular-category" id='helper_requirement-180'><label class="selectit"><input id="in-helper_requirement-180" name='j_mainduties[]' type="checkbox" value="180"> Groceries</label></li>
-											<li class="popular-category" id='helper_requirement-79'><label class="selectit"><input id="in-helper_requirement-79" name='j_mainduties[]' type="checkbox" value="79"> Housekeeping</label></li>
-											<li class="popular-category" id='helper_requirement-53'><label class="selectit"><input id="in-helper_requirement-53" name='j_mainduties[]' type="checkbox" value="53"> Pet Care</label></li>
-											<li class="popular-category" id='helper_requirement-91'><label class="selectit"><input id="in-helper_requirement-91" name='j_mainduties[]' type="checkbox" value="91"> Professional Driver</label></li>
-											<li class="popular-category" id='helper_requirement-55'><label class="selectit"><input id="in-helper_requirement-55" name='j_mainduties[]' type="checkbox" value="55"> Teen Care</label></li>
+											<li class="popular-category" id='helper_requirement-57'><label class="selectit"><input id="in-helper_requirement-57" name='j_mainduties' type="checkbox" value="Baby Care"> Baby Care</label></li>
+											<li class="popular-category" id='helper_requirement-56'><label class="selectit"><input id="in-helper_requirement-56" name='j_mainduties' type="checkbox" value="Child Care"> Child Care</label></li>
+											<li class="popular-category" id='helper_requirement-54'><label class="selectit"><input id="in-helper_requirement-54" name='j_mainduties' type="checkbox" value="Elder Care"> Elder Care</label></li>
+											<li class="popular-category" id='helper_requirement-180'><label class="selectit"><input id="in-helper_requirement-180" name='j_mainduties' type="checkbox" value="Groceries"> Groceries</label></li>
+											<li class="popular-category" id='helper_requirement-79'><label class="selectit"><input id="in-helper_requirement-79" name='j_mainduties' type="checkbox" value="Housekeeping"> Housekeeping</label></li>
+											<li class="popular-category" id='helper_requirement-53'><label class="selectit"><input id="in-helper_requirement-53" name='j_mainduties' type="checkbox" value="Pet Care"> Pet Care</label></li>
+											<li class="popular-category" id='helper_requirement-91'><label class="selectit"><input id="in-helper_requirement-91" name='j_mainduties' type="checkbox" value="Professional Driver"> Professional Driver</label></li>
+											<li class="popular-category" id='helper_requirement-55'><label class="selectit"><input id="in-helper_requirement-55" name='j_mainduties' type="checkbox" value="Teen Care"> Teen Care</label></li>
 										</ul>
 									</div>
 								</fieldset>
@@ -226,22 +228,22 @@
 											<option selected disabled>
 												Select Language
 											</option>
-											<option class="level-0" value="59">
+											<option class="level-0" value="Arabic">
 												Arabic
 											</option>
-											<option class="level-0" value="60">
+											<option class="level-0" value="Chinese">
 												Chinese
 											</option>
-											<option class="level-0" value="61">
+											<option class="level-0" value="Indian">
 												Indian
 											</option>
-											<option class="level-0" value="64">
+											<option class="level-0" value="Japanese">
 												Japanese
 											</option>
-											<option class="level-0" value="62">
+											<option class="level-0" value="Vegetarian">
 												Vegetarian
 											</option>
-											<option class="level-0" value="63">
+											<option class="level-0" value="Western">
 												Western
 											</option>
 										</select>
@@ -251,16 +253,16 @@
 									<label for="other_skills">Other Required Skills <small>(optional)</small></label>
 									<div class="field">
 										<ul class="job-manager-term-checklist job-manager-term-checklist-other_skills">
-											<li class="popular-category" id='other_skill-199'><label class="selectit"><input id="in-other_skill-199" 	name='j_otherskills[]' type="checkbox" value="199"> Baking</label></li>
-											<li class="popular-category" id='other_skill-84'><label class="selectit"><input id="in-other_skill-84" 		name='j_otherskills[]' type="checkbox" value="84"> Car Wash</label></li>
-											<li class="popular-category" id='other_skill-245'><label class="selectit"><input id="in-other_skill-245" 	name='j_otherskills[]' type="checkbox" value="245"> Driving Licence</label></li>
-											<li class="popular-category" id='other_skill-189'><label class="selectit"><input id="in-other_skill-189" 	name='j_otherskills[]' type="checkbox" value="189"> First Aid Certificate</label></li>
-											<li class="popular-category" id='other_skill-85'><label class="selectit"><input id="in-other_skill-85" 		name='j_otherskills[]' type="checkbox" value="85"> Gardening</label></li>
-											<li id='other_skill-89'><label class="selectit"><input id="in-other_skill-89" 								name='j_otherskills[]' type="checkbox" value="89"> Handyman</label></li>
-											<li class="popular-category" id='other_skill-86'><label class="selectit"><input id="in-other_skill-86" 		name='j_otherskills[]' type="checkbox" value="86"> Housework</label></li>
-											<li class="popular-category" id='other_skill-87'><label class="selectit"><input id="in-other_skill-87" 		name='j_otherskills[]' type="checkbox" value="87"> Sewing</label></li>
-											<li class="popular-category" id='other_skill-200'><label class="selectit"><input id="in-other_skill-200" 	name='j_otherskills[]' type="checkbox" value="200"> Swimming</label></li>
-											<li class="popular-category" id='other_skill-201'><label class="selectit"><input id="in-other_skill-201" 	name='j_otherskills[]' type="checkbox" value="201"> Tutoring</label></li>
+											<li class="popular-category" id='other_skill-199'><label class="selectit"><input id="in-other_skill-199" 	name='j_otherskills' type="checkbox" value="Baking"> Baking</label></li>
+											<li class="popular-category" id='other_skill-84'><label class="selectit"><input id="in-other_skill-84" 		name='j_otherskills' type="checkbox" value="Car Wash"> Car Wash</label></li>
+											<li class="popular-category" id='other_skill-245'><label class="selectit"><input id="in-other_skill-245" 	name='j_otherskills' type="checkbox" value="Driving Licence"> Driving Licence</label></li>
+											<li class="popular-category" id='other_skill-189'><label class="selectit"><input id="in-other_skill-189" 	name='j_otherskills' type="checkbox" value="First Aid Certificate"> First Aid Certificate</label></li>
+											<li class="popular-category" id='other_skill-85'><label class="selectit"><input id="in-other_skill-85" 		name='j_otherskills' type="checkbox" value="Gardening"> Gardening</label></li>
+											<li id='other_skill-89'><label class="selectit"><input id="in-other_skill-89" 								name='j_otherskills' type="checkbox" value="Handyman"> Handyman</label></li>
+											<li class="popular-category" id='other_skill-86'><label class="selectit"><input id="in-other_skill-86" 		name='j_otherskills' type="checkbox" value="Housework"> Housework</label></li>
+											<li class="popular-category" id='other_skill-87'><label class="selectit"><input id="in-other_skill-87" 		name='j_otherskills' type="checkbox" value="Sewing"> Sewing</label></li>
+											<li class="popular-category" id='other_skill-200'><label class="selectit"><input id="in-other_skill-200" 	name='j_otherskills' type="checkbox" value="Swimming"> Swimming</label></li>
+											<li class="popular-category" id='other_skill-201'><label class="selectit"><input id="in-other_skill-201" 	name='j_otherskills' type="checkbox" value="Tutoring"> Tutoring</label></li>
 										</ul>
 									</div>
 								</fieldset>
@@ -268,14 +270,14 @@
 									<label for="candidate_languages2">Required Languages</label>
 									<div class="field required-field">
 										<ul class="job-manager-term-checklist job-manager-term-checklist-candidate_languages2">
-											<li class="popular-category" id='candidate_language2-149'><label class="selectit"><input id="in-candidate_language2-149" name='j_requiredlanguages[]' type="checkbox" value="149"> Cantonese</label></li>
-											<li class="popular-category" id='candidate_language2-148'><label class="selectit"><input id="in-candidate_language2-148" name='j_requiredlanguages[]' type="checkbox" value="148"> English</label></li>
-											<li class="popular-category" id='candidate_language2-152'><label class="selectit"><input id="in-candidate_language2-152" name='j_requiredlanguages[]' type="checkbox" value="152"> Filipino</label></li>
-											<li class="popular-category" id='candidate_language2-153'><label class="selectit"><input id="in-candidate_language2-153" name='j_requiredlanguages[]' type="checkbox" value="153"> Indonesian</label></li>
-											<li id='candidate_language2-154'><label class="selectit"><input id="in-candidate_language2-154" 						 name='j_requiredlanguages[]' type="checkbox" value="154"> Japanese</label></li>
-											<li class="popular-category" id='candidate_language2-150'><label class="selectit"><input id="in-candidate_language2-150" name='j_requiredlanguages[]' type="checkbox" value="150"> Mandarin</label></li>
-											<li id='candidate_language2-168'><label class="selectit"><input id="in-candidate_language2-168" 						 name='j_requiredlanguages[]' type="checkbox" value="168"> Modern Arabic</label></li>
-											<li id='candidate_language2-151'><label class="selectit"><input id="in-candidate_language2-151"							 name='j_requiredlanguages[]' type="checkbox" value="151"> Thai</label></li>
+											<li class="popular-category" id='candidate_language2-149'><label class="selectit"><input id="in-candidate_language2-149" name='j_requiredlanguages' type="checkbox" value="Cantonese"> Cantonese</label></li>
+											<li class="popular-category" id='candidate_language2-148'><label class="selectit"><input id="in-candidate_language2-148" name='j_requiredlanguages' type="checkbox" value="English"> English</label></li>
+											<li class="popular-category" id='candidate_language2-152'><label class="selectit"><input id="in-candidate_language2-152" name='j_requiredlanguages' type="checkbox" value="Filipino"> Filipino</label></li>
+											<li class="popular-category" id='candidate_language2-153'><label class="selectit"><input id="in-candidate_language2-153" name='j_requiredlanguages' type="checkbox" value="Indonesian"> Indonesian</label></li>
+											<li id='candidate_language2-154'><label class="selectit"><input id="in-candidate_language2-154" 						 name='j_requiredlanguages' type="checkbox" value="Japanese"> Japanese</label></li>
+											<li class="popular-category" id='candidate_language2-150'><label class="selectit"><input id="in-candidate_language2-150" name='j_requiredlanguages' type="checkbox" value="Mandarin"> Mandarin</label></li>
+											<li id='candidate_language2-168'><label class="selectit"><input id="in-candidate_language2-168" 						 name='j_requiredlanguages' type="checkbox" value="Modern Arabic"> Modern Arabic</label></li>
+											<li id='candidate_language2-151'><label class="selectit"><input id="in-candidate_language2-151"							 name='j_requiredlanguages' type="checkbox" value="Thai"> Thai</label></li>
 										</ul>
 									</div>
 								</fieldset>
@@ -311,76 +313,76 @@
 										<select class='postform' id='employer_nationalities' name='j_nationality' required="">
 											<option selected disabled>
 												Select family type
-											</option><option class="level-0" value="181">
+											</option><option class="level-0" value="American Family">
 												American Family
 											</option>
-											<option class="level-0" value="187">
+											<option class="level-0" value="Australian Family">
 												Australian Family
 											</option>
-											<option class="level-0" value="214">
+											<option class="level-0" value="Belgian Family">
 												Belgian Family
 											</option>
-											<option class="level-0" value="198">
+											<option class="level-0" value="British Family">
 												British Family
 											</option>
-											<option class="level-0" value="218">
+											<option class="level-0" value="Canadian Family">
 												Canadian Family
 											</option>
-											<option class="level-0" value="51">
+											<option class="level-0" value="Chinese Family">
 												Chinese Family
 											</option>
-											<option class="level-0" value="819">
+											<option class="level-0" value="Dutch Family">
 												Dutch Family
 											</option>
-											<option class="level-0" value="1064">
+											<option class="level-0" value="Filipino Family">
 												Filipino Family
 											</option>
-											<option class="level-0" value="216">
+											<option class="level-0" value="French Family">
 												French Family
 											</option>
-											<option class="level-0" value="197">
+											<option class="level-0" value="German Family">
 												German Family
 											</option>
-											<option class="level-0" value="52">
+											<option class="level-0" value="Hong Kong Family">
 												Hong Kong Family
 											</option>
-											<option class="level-0" value="188">
+											<option class="level-0" value="Indian Family">
 												Indian Family
 											</option>
-											<option class="level-0" value="228">
+											<option class="level-0" value="Italian Family">
 												Italian Family
 											</option>
-											<option class="level-0" value="81">
+											<option class="level-0" value="Japanese Family">
 												Japanese Family
 											</option>
-											<option class="level-0" value="80">
+											<option class="level-0" value="Korean Family">
 												Korean Family
 											</option>
-											<option class="level-0" value="82">
+											<option class="level-0" value="Middle East Family">
 												Middle East Family
 											</option>
-											<option class="level-0" value="179">
+											<option class="level-0" value="Pakistani Family">
 												Pakistani Family
 											</option>
-											<option class="level-0" value="267">
+											<option class="level-0" value="Russian Family">
 												Russian Family
 											</option>
-											<option class="level-0" value="178">
+											<option class="level-0" value="Singaporean family">
 												Singaporean family
 											</option>
-											<option class="level-0" value="226">
+											<option class="level-0" value="South African Family">
 												South African Family
 											</option>
-											<option class="level-0" value="227">
+											<option class="level-0" value="Spanish Family">
 												Spanish Family
 											</option>
-											<option class="level-0" value="83">
+											<option class="level-0" value="Taiwanese Family">
 												Taiwanese Family
 											</option>
-											<option class="level-0" value="325">
+											<option class="level-0" value="Turkish Family">
 												Turkish Family
 											</option>
-											<option class="level-0" value="50">
+											<option class="level-0" value="Western Family">
 												Western Family
 											</option>
 										</select>
@@ -393,46 +395,47 @@
 											<option selected disabled>
 												Select family type
 											</option>
-											<option class="level-0" value="68">
+											<option class="level-0" value="Couple">
 												Couple
 											</option>
-											<option class="level-0" value="69">
+											<option class="level-0" value="Couple + 1 kid">
 												Couple + 1 kid
 											</option>
-											<option class="level-0" value="70">
+											<option class="level-0" value="Couple + 2 kids">
 												Couple + 2 kids
 											</option>
-											<option class="level-0" value="71">
+											<option class="level-0" value="Couple + 3 kids">
 												Couple + 3 kids
 											</option>
-											<option class="level-0" value="72">
+											<option class="level-0" value="Couple + 4 kids">
 												Couple + 4 kids
 											</option>
-											<option class="level-0" value="169">
+											<option class="level-0" value="Couple + 5 kids">
 												Couple + 5 kids
 											</option>
-											<option class="level-0" value="248">
+											<option class="level-0" value="Couple + Parents">
 												Couple + Parents
 											</option>
-											<option class="level-0" value="213">
+											<option class="level-0" value="Couple with Parents
+">
 												Couple with Parents
 											</option>
-											<option class="level-0" value="170">
+											<option class="level-0" value="Large Family (&gt; 6)">
 												Large Family (&gt; 6)
 											</option>
-											<option class="level-0" value="202">
+											<option class="level-0" value="Large Family (&gt;6)">
 												Large Family (&gt;6)
 											</option>
-											<option class="level-0" value="73">
+											<option class="level-0" value="Other">
 												Other
 											</option>
-											<option class="level-0" value="67">
+											<option class="level-0" value="Single">
 												Single
 											</option>
-											<option class="level-0" value="211">
+											<option class="level-0" value="Single + 1 kid">
 												Single + 1 kid
 											</option>
-											<option class="level-0" value="210">
+											<option class="level-0" value="Single + 2 kids">
 												Single + 2 kids
 											</option>
 										</select>
@@ -465,7 +468,11 @@
 										<small class="description">A nice logo will be automatically added by your support team - Not required to upload your own logo.</small>
 									</div>
 								</fieldset>
-								<p><input name="job_manager_form" type="hidden" value="submit-job"> <input name="job_id" type="hidden" value="0"> <input name="step" type="hidden" value="0"> <input class="button" name="submit_job" type="submit" value="Submit Job"></p>
+								<p><input name="job_manager_form" type="hidden" value="submit-job"> <input name="job_id" type="hidden" value="0"> <input name="step" type="hidden" value="0"> 
+
+								
+								<button name="submit" type="submit">SUBMIT JOB</button>
+								</p>
 								<p class="p1"><em><span class="s1">Don’t forget! A nice description of your family will increase your chances to connect with the best profiles. To check if you like your post, just click on the Submit Job button.&nbsp;</span></em></p>
 							</form>
 							<script type="text/javascript">

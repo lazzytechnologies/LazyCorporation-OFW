@@ -1,3 +1,6 @@
+<?php ob_start();?>
+<?php include "includes/connection.php" ?>
+<?php include "includes/function.php" ?>
 <?php include "includes-employer/header.php" ?>
 <?php include "includes-employer/navigation.php" ?>
 <?php 

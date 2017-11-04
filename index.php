@@ -1,5 +1,8 @@
+<?php ob_start();?>
+<?php include "includes/connection.php" ?>
 <?php include "includes/header.php" ?>
 <?php include "includes/navigation.php" ?>
+<?php include "includes/function.php" ?>
 <?php 
 
 	if (isset($_GET['source'])) {
@@ -35,6 +38,12 @@
 			break;
 		case 'termsandcondition':
 			include "includes/terms-and-condition.php";
+			break;
+		case 'register':
+			include "includes/register.php";
+			break;
+		case 'login':
+			include "includes/login.php";
 			break;
 		default:
 			include "includes/homepage.php";
