@@ -58,6 +58,7 @@ function register_user()
 function login_user()
 {
 	global $connection;
+	
 	if (isset($_POST['submit'])) 
 			{
 				$username=$_POST['u_username'];
@@ -88,9 +89,12 @@ function login_user()
 
 				if($db_username===$username && $db_password===$password)
 				{
-					echo "login success <br>";
+					$_SESSION['u_id']=$db_userid;
+					$_SESSION['u_username']=$db_username;
+					$_SESSION['u_role']=$db_role;
 					if ($db_role==='employer') 
 					{					
+					
 						header("Location:index-employer.php");
 
 					}
@@ -112,7 +116,7 @@ function post_job()
 	global $connection;
 	if (isset($_POST['submit'])) 
 			{
-				$u_id="1";
+				$u_id=$_SESSION['u_id'];
 				$jobtitle=$_POST['j_jobtitle'];
 				$jobcountry=$_POST['j_country'];
 				$jobdistrictlocation=$_POST['j_districtlocation'];
@@ -214,7 +218,7 @@ function submit_profile()
 	global $connection;
 	if (isset($_POST['submit'])) 
 			{
-				$u_id="1";
+				$u_id=$_SESSION['u_id'];
 				$resumecategory=$_POST['up_category'];
 				$upemail=$_POST['up_email'];
 				$nationality=$_POST['up_nationality'];

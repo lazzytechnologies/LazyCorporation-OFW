@@ -1,9 +1,22 @@
 <?php ob_start();?>
+
 <?php include "includes/connection.php" ?>
 <?php include "includes/function.php" ?>
 <?php include "includes-employer/header.php" ?>
 <?php include "includes-employer/navigation.php" ?>
 <?php 
+	
+	if(!isset($_SESSION['u_id']))
+	{
+		header("Location:index.php");
+	}
+	else
+	{
+		if($_SESSION['u_role']!=='employer')
+		{
+			header("Location:includes-employer/logout.php");
+		}
+	}
 
 	if (isset($_GET['source'])) {
 

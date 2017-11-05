@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php session_start(); ?>
 <html lang="en-GB" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
 <!-- Mirrored from www.helperplace.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Oct 2017 01:16:06 GMT -->
 <!-- Added by HTTrack -->

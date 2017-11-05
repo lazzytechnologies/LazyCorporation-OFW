@@ -29,13 +29,13 @@
 								</ul>
 							</li>
 							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-99991222" id="menu-item-99991222">
-								<a href="index-employer.php?source=myaccount">My Profile</a>
+								<a href="index-employer.php?source=myaccount"><?php echo ucfirst($_SESSION['u_username']); ?></a>
 								<ul class="sub-menu">
 									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99991223" id="menu-item-99991223">
 										<a href="index-employer.php?source=managejobs">Manage Jobs</a>
 									</li>
 									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-99991521" id="menu-item-99991521">
-										<a href="index.php">Log Out</a>
+										<a href="includes-employer/logout.php">Log Out</a>
 									</li>
 								</ul>
 							</li>

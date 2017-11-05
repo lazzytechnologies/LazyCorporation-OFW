@@ -5,6 +5,18 @@
 <?php include "includes-candidate/navigation.php" ?>
 <?php 
 
+	if(!isset($_SESSION['u_id']))
+	{
+		header("Location:index.php");
+	}
+	else
+	{
+		if($_SESSION['u_role']!=='candidate')
+		{
+			header("Location:includes-candidate/logout.php");
+		}
+	}
+
 	if (isset($_GET['source'])) {
 
 		$source=$_GET['source'];
