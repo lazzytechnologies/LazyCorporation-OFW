@@ -43,6 +43,10 @@ function register_user()
 					{
 						 die("no result".mysqli_error($connection));
 					}
+					else
+					{
+						echo "REGISTRATION COMPLETE";
+					}
 				}
 				else
 				{

@@ -1,4 +1,4 @@
-<br><br><br><br><br>
+
 	<div class="site-main" id="main">
 		<header class="page-header">
 			<h1 class="page-title">Login</h1>
